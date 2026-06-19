@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวประเทศไทย - แกลเลอรีรูปภาพ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ส่วนหัวของเว็บไซต์ -->
+    <header>
+        <h1>Amazing Thailand Gallery</h1>
+        <p>รวมภาพถ่ายสถานที่ท่องเที่ยวสุดสวยในประเทศไทย</p>
+    </header>
+
+    <!-- ส่วนแสดงรูปภาพ (Gallery Grid) -->
+    <main class="gallery-container">
+        
+        <!-- บล็อกรูปภาพที่ 1 (ก๊อปปี้บล็อกนี้เพิ่มได้เรื่อยๆ) -->
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=500" alt="กรุงเทพมหานคร">
+            <div class="image-info">
+                <h3>กรุงเทพมหานคร</h3>
+                <p>วัดอรุณราชวรารามราชวรมหาวิหาร</p>
+            </div>
+        </div>
+
+        <!-- บล็อกรูปภาพที่ 2 -->
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500" alt="เชียงใหม่">
+            <div class="image-info">
+                <h3>เชียงใหม่</h3>
+                <p>ดอยอินทนนท์ สัมผัสอากาศหนาว</p>
+            </div>
+        </div>
+
+        <!-- บล็อกรูปภาพที่ 3 -->
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=500" alt="ภูเก็ต">
+            <div class="image-info">
+                <h3>ภูเก็ต</h3>
+                <p>ทะเลใต้ หาดทรายขาวละเอียด</p>
+            </div>
+        </div>
+
+        <!-- บล็อกรูปภาพที่ 4 -->
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=500" alt="อยุธยา">
+            <div class="image-info">
+                <h3>อยุธยา</h3>
+                <p>ชมโบราณสถานและประวัติศาสตร์ไทย</p>
+            </div>
+        </div>
+
+        <!-- คุณสามารถเพิ่มรูปภาพต่อตรงนี้ได้เลย โดยเปลี่ยนใน src="..." -->
+
+    </main>
+
+    <!-- ส่วนป๊อปอัปขยายรูปภาพ (Lightbox) -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="ภาพขยาย">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <p>© 2026 Thailand Travel Gallery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
